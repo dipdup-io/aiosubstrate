@@ -17,14 +17,13 @@ jobs:
         uses: astral-sh/setup-uv@v4
         with:
           version: "latest"
-          python-version: "3.12"
+          python-version: "3.13"
 
       - name: Run install
         run: uv run make install
 
       - name: Run lint
         run: uv run make lint
-        if: contains(matrix.os, 'ubuntu') && contains(matrix.arch, 'amd64')
 
       - name: Run tests
         run: uv run make test
