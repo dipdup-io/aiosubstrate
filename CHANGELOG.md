@@ -12,7 +12,6 @@ Initial release; forked from `py-substrate-interface`.
 
 - All network-related functions and methods return coroutines now.
 - Optional cryptography dependencies moved to the optional `full` extra.
-- Added Python 3.13 to the test matrix, removed Python 3.9 support.
 
 <!-- Links -->
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
