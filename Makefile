@@ -1,10 +1,9 @@
 .PHONY: $(MAKECMDGOALS)
 MAKEFLAGS += --no-print-directory
 ##
-##  🚧 DipDup developer tools
+##  🚧 aiosubstrate developer tools
 ##
 PACKAGE=aiosubstrate
-TAG=latest
 SOURCE=src tests examples
 
 
