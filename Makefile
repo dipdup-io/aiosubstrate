@@ -5,7 +5,7 @@ MAKEFLAGS += --no-print-directory
 ##
 PACKAGE=aiosubstrate
 TAG=latest
-SOURCE=aiosubstrate test examples
+SOURCE=src tests examples
 
 
 help:           ## Show this help (default)
@@ -16,7 +16,7 @@ help:           ## Show this help (default)
 ##
 
 install:        ## Install dependencies
-	uv sync --extra full
+	uv sync --extra full --frozen
 
 update:         ## Update dependencies
 	uv lock
@@ -35,7 +35,7 @@ lint:           ## Lint with all tools
 	make ruff mypy
 
 test:           ## Run tests
-	COVERAGE_CORE=sysmon pytest test
+	COVERAGE_CORE=sysmon pytest tests
 
 ##
 

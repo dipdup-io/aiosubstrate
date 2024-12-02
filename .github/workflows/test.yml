@@ -1,0 +1,47 @@
+name: Test
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+on:
+  push:
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'pyproject.toml'
+      - 'uv.lock'
+      - '.github/workflows/test.yml'
+
+jobs:
+  test:
+    name: Test
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            arch: amd64
+          - os: ubuntu-latest
+            arch: arm64
+          # - os: macos-latest
+          #   arch: amd64
+          - os: macos-latest
+            arch: arm64
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: astral-sh/setup-uv@v4
+        with:
+          version: "latest"
+          python-version: "3.12"
+
+      - name: Run install
+        run: uv run make install
+
+      - name: Run lint
+        run: uv run make lint
+        if: contains(matrix.os, 'ubuntu') && contains(matrix.arch, 'amd64')
+
+      - name: Run tests
+        run: uv run make test
