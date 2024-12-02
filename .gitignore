@@ -9,10 +9,10 @@
 !**/Makefile
 !**/pyproject.toml
 !**/requirements*
-!**/uf.lock
+!**/uv.lock
 !**/README.md
 !**/.keep
-!**/py.typed
+!src/**/py.typed
 
 # Add Python code
 !src/**/*.py
