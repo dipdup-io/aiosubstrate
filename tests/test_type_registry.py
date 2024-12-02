@@ -20,7 +20,7 @@ from scalecodec.base import ScaleBytes, RuntimeConfigurationObject  # type: igno
 from scalecodec.type_registry import load_type_registry_file, load_type_registry_preset  # type: ignore[import-untyped]
 
 from aiosubstrate import SubstrateInterface, Keypair, KeypairType
-from test import settings
+from tests import settings
 
 
 class KusamaTypeRegistryTestCase(unittest.IsolatedAsyncioTestCase):

@@ -17,13 +17,13 @@
 import unittest
 from unittest.mock import AsyncMock
 
-from test import settings
+from tests import settings
 
 from scalecodec.exceptions import RemainingScaleBytesNotEmptyException  # type: ignore[import-untyped]
 
 from aiosubstrate import SubstrateInterface
 
-from test.fixtures import metadata_node_template_hex
+from tests.fixtures import metadata_node_template_hex
 
 from scalecodec.base import ScaleBytes  # type: ignore[import-untyped]
 from scalecodec.types import Vec, GenericAddress  # type: ignore[import-untyped]

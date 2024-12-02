@@ -21,7 +21,7 @@ import unittest
 from aiosubstrate import SubstrateInterface
 from aiosubstrate.exceptions import ExtensionCallNotFound
 from aiosubstrate.extensions import SubstrateNodeExtension
-from test import settings
+from tests import settings
 
 
 class ExtensionsTestCase(unittest.IsolatedAsyncioTestCase):

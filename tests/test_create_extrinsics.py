@@ -19,7 +19,7 @@ import unittest
 from scalecodec.type_registry import load_type_registry_file  # type: ignore[import-untyped]
 from aiosubstrate import SubstrateInterface, Keypair, ExtrinsicReceipt
 from aiosubstrate.exceptions import SubstrateRequestException
-from test import settings
+from tests import settings
 
 
 class CreateExtrinsicsTestCase(unittest.IsolatedAsyncioTestCase):

@@ -17,7 +17,7 @@
 import unittest
 
 from aiosubstrate import SubstrateInterface, Keypair
-from test import settings
+from tests import settings
 
 
 class RuntimeCallTestCase(unittest.IsolatedAsyncioTestCase):

@@ -20,7 +20,7 @@ import unittest
 from scalecodec import ScaleBytes  # type: ignore[import-untyped]
 from aiosubstrate import SubstrateInterface, ContractMetadata, ContractInstance, Keypair, ContractEvent
 from aiosubstrate.exceptions import ContractMetadataParseException
-from test import settings
+from tests import settings
 
 
 class ContractMetadataTestCase(unittest.IsolatedAsyncioTestCase):

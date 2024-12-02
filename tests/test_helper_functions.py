@@ -22,7 +22,7 @@ from scalecodec.type_registry import load_type_registry_file  # type: ignore[imp
 from aiosubstrate.exceptions import SubstrateRequestException
 from scalecodec.base import ScaleBytes  # type: ignore[import-untyped]
 from aiosubstrate import SubstrateInterface, Keypair
-from test.settings import POLKADOT_NODE_URL
+from tests.settings import POLKADOT_NODE_URL
 
 
 class TestHelperFunctions(unittest.IsolatedAsyncioTestCase):
