@@ -56,7 +56,6 @@ full = [
 
 [dependency-groups]
 dev = [
-    "black>=24.10.0",
     "mypy>=1.13.0",
     "pytest-asyncio>=0.24.0",
     "pytest>=8.3.3",
@@ -71,28 +70,21 @@ docs = [
 
 ]
 
-# [tool.black]
-# line-length = 120
-# target-version = ["py312"]
-# skip-string-normalization = true
-
 [tool.ruff]
 line-length = 120
 target-version = "py312"
 
-# [tool.ruff.lint]
-# # ignore = [
-# #     "E402",   # module level import not at top of file
-# #     "E501",   # line too long
-# # ]
-# # extend-select = ["B", "C4", "FA", "G", "I", "PTH", "Q", "RET", "RUF", "TCH", "UP"]
-# extend-select = ["I", "Q"]
-# flake8-quotes = { inline-quotes = "single", multiline-quotes = "double" }
-# isort = { force-single-line = true, known-first-party = ["aiosubstrate"] }
+[tool.ruff.lint]
+# extend-select = ["B", "C4", "FA", "G", "I", "PTH", "Q", "RET", "RUF", "TCH", "UP"]
+extend-select = ["I", "Q"]
+flake8-quotes = { inline-quotes = "single", multiline-quotes = "double" }
+isort = { force-single-line = true, known-first-party = ["aiosubstrate"] }
 
-# [tool.mypy]
-# python_version = "3.12"
-# strict = false
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.mypy]
+strict = false
 
 [tool.pytest.ini_options]
 addopts="--cov-report=term-missing --cov=aiosubstrate --cov-report=xml -s -v"

@@ -27,8 +27,8 @@ update:         ## Update dependencies
 all:            ## Run an entire CI pipeline
 	make format lint test
 
-format:         ## Format with all tools
-	make black
+format:         ## Format with ruff
+	ruff format
 
 lint:           ## Lint with all tools
 	make ruff mypy
@@ -37,9 +37,6 @@ test:           ## Run tests
 	COVERAGE_CORE=sysmon pytest tests
 
 ##
-
-black:          ## Format with black
-	black ${SOURCE}
 
 ruff:           ## Lint with ruff
 	ruff check --fix --unsafe-fixes ${SOURCE}
