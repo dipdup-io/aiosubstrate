@@ -16,11 +16,11 @@
 import os
 import unittest
 
-from substrateinterface.constants import DEV_PHRASE
-from substrateinterface.key import extract_derive_path
-from substrateinterface.exceptions import ConfigurationError
+from aiosubstrate.constants import DEV_PHRASE
+from aiosubstrate.key import extract_derive_path
+from aiosubstrate.exceptions import ConfigurationError
 from scalecodec.base import ScaleBytes  # type: ignore[import-untyped]
-from substrateinterface import Keypair, KeypairType, MnemonicLanguageCode
+from aiosubstrate import Keypair, KeypairType, MnemonicLanguageCode
 
 
 class KeyPairTestCase(unittest.IsolatedAsyncioTestCase):

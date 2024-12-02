@@ -1,8 +1,8 @@
 import asyncio
 from datetime import datetime
 
-from substrateinterface import SubstrateInterface
-from substrateinterface.extensions import SubstrateNodeExtension
+from aiosubstrate import SubstrateInterface
+from aiosubstrate.extensions import SubstrateNodeExtension
 
 import logging
 logging.basicConfig(level=logging.DEBUG)

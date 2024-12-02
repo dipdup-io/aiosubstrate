@@ -16,10 +16,10 @@
 
 import unittest
 
-from substrateinterface.utils.ss58 import ss58_decode, ss58_encode, ss58_encode_account_index, \
+from aiosubstrate.utils.ss58 import ss58_decode, ss58_encode, ss58_encode_account_index, \
     ss58_decode_account_index, is_valid_ss58_address
 
-from substrateinterface import Keypair
+from aiosubstrate import Keypair
 
 
 class SS58TestCase(unittest.IsolatedAsyncioTestCase):

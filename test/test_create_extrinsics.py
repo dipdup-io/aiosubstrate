@@ -17,8 +17,8 @@ import os
 import unittest
 
 from scalecodec.type_registry import load_type_registry_file  # type: ignore[import-untyped]
-from substrateinterface import SubstrateInterface, Keypair, ExtrinsicReceipt
-from substrateinterface.exceptions import SubstrateRequestException
+from aiosubstrate import SubstrateInterface, Keypair, ExtrinsicReceipt
+from aiosubstrate.exceptions import SubstrateRequestException
 from test import settings
 
 

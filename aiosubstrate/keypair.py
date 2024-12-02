@@ -27,7 +27,7 @@ import re
 import secrets
 from base64 import b64encode
 
-from substrateinterface.utils import wrap_import
+from aiosubstrate.utils import wrap_import
 
 from .constants import DEV_PHRASE
 from .exceptions import ConfigurationError

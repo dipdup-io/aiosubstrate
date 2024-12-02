@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import asyncio
-from substrateinterface import SubstrateInterface
+from aiosubstrate import SubstrateInterface
 
 
 async def subscription_handler(storage_key, updated_obj, update_nr, subscription_id):

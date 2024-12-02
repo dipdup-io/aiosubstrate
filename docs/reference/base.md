@@ -1,1 +1,1 @@
-::: substrateinterface.base
+::: aiosubstrate.base

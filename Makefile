@@ -3,9 +3,9 @@ MAKEFLAGS += --no-print-directory
 ##
 ##  🚧 DipDup developer tools
 ##
-PACKAGE=substrateinterface
+PACKAGE=aiosubstrate
 TAG=latest
-SOURCE=substrateinterface test examples
+SOURCE=aiosubstrate test examples
 
 
 help:           ## Show this help (default)
@@ -16,7 +16,7 @@ help:           ## Show this help (default)
 ##
 
 install:        ## Install dependencies
-	uv sync
+	uv sync --extra full
 
 update:         ## Update dependencies
 	uv lock

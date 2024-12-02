@@ -19,9 +19,9 @@ from unittest.mock import AsyncMock
 
 from scalecodec.types import GenericAccountId  # type: ignore[import-untyped]
 
-from substrateinterface.exceptions import SubstrateRequestException
+from aiosubstrate.exceptions import SubstrateRequestException
 
-from substrateinterface import SubstrateInterface
+from aiosubstrate import SubstrateInterface
 from test import settings
 
 

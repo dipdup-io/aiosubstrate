@@ -1,5 +1,5 @@
 site_name: Python Substrate Interface Docs
-repo_url: https://github.com/polkascan/py-substrate-interface
+repo_url: https://github.com/dipdup-io/aiosubstrate
 edit_uri: edit/master/docs/
 site_description: Python library to interface with Substrate
 

@@ -18,7 +18,7 @@ import hashlib
 import hmac
 import struct
 
-from substrateinterface.utils import wrap_import
+from aiosubstrate.utils import wrap_import
 
 BIP39_PBKDF2_ROUNDS = 2048
 BIP39_SALT_MODIFIER = "mnemonic"

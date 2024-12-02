@@ -11,9 +11,9 @@ the extension registry.
 
 | Name                                                 | Maintained by        | Code                                                                              |
 |------------------------------------------------------|----------------------|-----------------------------------------------------------------------------------|
-| [SubstrateNodeExtension](./substrate-node-extension) | Polkascan Foundation | [Github](https://github.com/polkascan/py-substrate-interface)                     |
-| [PolkascanExtension](./polkascan-extension.md)       | Polkascan Foundation | [Github](https://github.com/polkascan/py-substrate-interface-extension-polkascan) |
-| [SubsquidExtension](./subsquid-extension.md)         | Polkascan Foundation | [Github](https://github.com/polkascan/py-substrate-interface-extension-subsquid)  |
+| [SubstrateNodeExtension](./substrate-node-extension) | Polkascan Foundation | [Github](https://github.com/dipdup-io/aiosubstrate)                     |
+| [PolkascanExtension](./polkascan-extension.md)       | Polkascan Foundation | [Github](https://github.com/dipdup-io/aiosubstrate-extension-polkascan) |
+| [SubsquidExtension](./subsquid-extension.md)         | Polkascan Foundation | [Github](https://github.com/dipdup-io/aiosubstrate-extension-subsquid)  |
 
 ## Available extension calls
 

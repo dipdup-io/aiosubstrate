@@ -1,6 +1,6 @@
 ## Install using PyPI
 ```bash
-pip install substrate-interface
+pip install aiosubstrate
 ```
 
 ## Initialization

@@ -1,1 +1,1 @@
-::: substrateinterface.extensions
+::: aiosubstrate.extensions

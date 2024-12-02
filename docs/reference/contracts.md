@@ -1,1 +1,1 @@
-::: substrateinterface.contracts
+::: aiosubstrate.contracts

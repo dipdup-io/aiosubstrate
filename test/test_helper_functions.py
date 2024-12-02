@@ -19,9 +19,9 @@ from unittest.mock import AsyncMock
 
 from scalecodec import GenericExtrinsic  # type: ignore[import-untyped]
 from scalecodec.type_registry import load_type_registry_file  # type: ignore[import-untyped]
-from substrateinterface.exceptions import SubstrateRequestException
+from aiosubstrate.exceptions import SubstrateRequestException
 from scalecodec.base import ScaleBytes  # type: ignore[import-untyped]
-from substrateinterface import SubstrateInterface, Keypair
+from aiosubstrate import SubstrateInterface, Keypair
 from test.settings import POLKADOT_NODE_URL
 
 

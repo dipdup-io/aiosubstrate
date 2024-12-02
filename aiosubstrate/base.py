@@ -35,7 +35,7 @@ from scalecodec.types import GenericCall, GenericExtrinsic, MultiAccountId, Gene
 from scalecodec.type_registry import load_type_registry_preset  # type: ignore[import-untyped]
 from scalecodec.updater import update_type_registries  # type: ignore[import-untyped]
 
-from substrateinterface.constants import WELL_KNOWN_STORAGE_KEYS
+from aiosubstrate.constants import WELL_KNOWN_STORAGE_KEYS
 from .extensions import Extension
 from .interfaces import ExtensionInterface
 
@@ -480,7 +480,7 @@ class SubstrateInterface:
 
             return response.get('result')
 
-        return None
+        return None  # type: ignore[return-value]
 
     async def get_chain_finalised_head(self) -> str:
         """
@@ -498,7 +498,7 @@ class SubstrateInterface:
 
             return response.get('result')
 
-        return None
+        return None  # type: ignore[return-value]
 
     async def get_block_hash(self, block_id: int | None = None) -> str:
         """

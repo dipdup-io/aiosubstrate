@@ -16,7 +16,7 @@
 
 import unittest
 
-from substrateinterface import SubstrateInterface, Keypair
+from aiosubstrate import SubstrateInterface, Keypair
 from test import settings
 
 

@@ -2,18 +2,18 @@
 
 This extension enables indexes provided by [Polkascan Explorer API](https://github.com/polkascan/explorer#explorer-api-component).
 
-Maintained by [Polkascan Foundation](https://github.com/polkascan/py-substrate-interface-extension-polkascan).
+Maintained by [Polkascan Foundation](https://github.com/dipdup-io/aiosubstrate-extension-polkascan).
 
 ## Installation
 ```bash
-pip install substrate-interface-polkascan
+pip install aiosubstrate-polkascan
 ```
 
 ## Initialization
 
 ```python
-from substrateinterface import SubstrateInterface 
-from substrateinterface_polkascan.extensions import PolkascanExtension
+from aiosubstrate import SubstrateInterface 
+from aiosubstrate_polkascan.extensions import PolkascanExtension
 
 substrate = SubstrateInterface(url="ws://127.0.0.1:9944")
 

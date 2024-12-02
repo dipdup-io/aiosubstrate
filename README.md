@@ -1,9 +1,9 @@
 # Python Substrate Interface
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/polkascan/py-substrate-interface/unittests.yml?branch=master)](https://github.com/polkascan/py-substrate-interface/actions?query=workflow%3A%22Run+unit+tests%22)
-[![Latest Version](https://img.shields.io/pypi/v/substrate-interface.svg)](https://pypi.org/project/substrate-interface/)
-[![Supported Python versions](https://img.shields.io/pypi/pyversions/substrate-interface.svg)](https://pypi.org/project/substrate-interface/)
-[![License](https://img.shields.io/pypi/l/substrate-interface.svg)](https://github.com/polkascan/py-substrate-interface/blob/master/LICENSE)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/dipdup-io/aiosubstrate/unittests.yml?branch=master)](https://github.com/dipdup-io/aiosubstrate/actions?query=workflow%3A%22Run+unit+tests%22)
+[![Latest Version](https://img.shields.io/pypi/v/aiosubstrate.svg)](https://pypi.org/project/aiosubstrate/)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/aiosubstrate.svg)](https://pypi.org/project/aiosubstrate/)
+[![License](https://img.shields.io/pypi/l/aiosubstrate.svg)](https://github.com/dipdup-io/aiosubstrate/blob/master/LICENSE)
 
 
 ## Description
@@ -13,12 +13,12 @@ the Substrate runtime.
 
 ## Documentation
 
-* [Library documentation](https://polkascan.github.io/py-substrate-interface/)
+* [Library documentation](https://polkascan.github.io/aiosubstrate/)
 * [Metadata documentation for Polkadot and Kusama ecosystem runtimes](https://polkascan.github.io/py-substrate-metadata-docs/)
 
 ## Installation
 ```bash
-pip install substrate-interface
+pip install aiosubstrate
 ```
 
 ## Initialization
@@ -60,8 +60,8 @@ print(f"Extrinsic '{receipt.extrinsic_hash}' sent and included in block '{receip
 
 ## Contact and Support 
 
-For questions, please see the [Substrate StackExchange](https://substrate.stackexchange.com/questions/tagged/python), [Github Discussions](https://github.com/polkascan/py-substrate-interface/discussions) or 
+For questions, please see the [Substrate StackExchange](https://substrate.stackexchange.com/questions/tagged/python), [Github Discussions](https://github.com/dipdup-io/aiosubstrate/discussions) or 
 reach out to us on our [matrix](http://matrix.org) chat group: [Polkascan Technical](https://matrix.to/#/#polkascan:matrix.org).
 
 ## License
-https://github.com/polkascan/py-substrate-interface/blob/master/LICENSE
+https://github.com/dipdup-io/aiosubstrate/blob/master/LICENSE

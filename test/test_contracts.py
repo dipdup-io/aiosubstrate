@@ -18,8 +18,8 @@ import os
 import unittest
 
 from scalecodec import ScaleBytes  # type: ignore[import-untyped]
-from substrateinterface import SubstrateInterface, ContractMetadata, ContractInstance, Keypair, ContractEvent
-from substrateinterface.exceptions import ContractMetadataParseException
+from aiosubstrate import SubstrateInterface, ContractMetadata, ContractInstance, Keypair, ContractEvent
+from aiosubstrate.exceptions import ContractMetadataParseException
 from test import settings
 
 

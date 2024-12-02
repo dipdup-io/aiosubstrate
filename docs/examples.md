@@ -1,8 +1,8 @@
 ## Batch call
 
 ```python
-from substrateinterface import SubstrateInterface, Keypair
-from substrateinterface.exceptions import SubstrateRequestException
+from aiosubstrate import SubstrateInterface, Keypair
+from aiosubstrate.exceptions import SubstrateRequestException
 
 substrate = SubstrateInterface(
     url="ws://127.0.0.1:9944"
@@ -58,7 +58,7 @@ except SubstrateRequestException as e:
 ## Fee info
 
 ```python
-from substrateinterface import SubstrateInterface, Keypair
+from aiosubstrate import SubstrateInterface, Keypair
 
 
 # import logging
@@ -89,7 +89,7 @@ print("Payment info: ", payment_info)
 ## Query a Mapped storage function
 
 ```python
-from substrateinterface import SubstrateInterface
+from aiosubstrate import SubstrateInterface
 
 substrate = SubstrateInterface(
     url="ws://127.0.0.1:9944"
@@ -104,7 +104,7 @@ for account, account_info in result:
 ## Multisig transaction
 
 ```python
-from substrateinterface import SubstrateInterface, Keypair
+from aiosubstrate import SubstrateInterface, Keypair
 
 substrate = SubstrateInterface(url="ws://127.0.0.1:9944")
 
@@ -156,8 +156,8 @@ else:
 ```python
 import os
 
-from substrateinterface.contracts import ContractCode, ContractInstance
-from substrateinterface import SubstrateInterface, Keypair
+from aiosubstrate.contracts import ContractCode, ContractInstance
+from aiosubstrate import SubstrateInterface, Keypair
 
 substrate = SubstrateInterface(
     url="ws://127.0.0.1:9944"
@@ -231,7 +231,7 @@ print('Current value of "get":', result.contract_result_data)
 ## Historic balance
 
 ```python
-from substrateinterface import SubstrateInterface
+from aiosubstrate import SubstrateInterface
 
 substrate = SubstrateInterface(url="ws://127.0.0.1:9944")
 
@@ -256,7 +256,7 @@ print(f"Balance @ {block_number}: {format_balance(balance)}")
 ## Block headers subscription
 
 ```python
-from substrateinterface import SubstrateInterface
+from aiosubstrate import SubstrateInterface
 
 substrate = SubstrateInterface(url="ws://127.0.0.1:9944")
 
@@ -280,7 +280,7 @@ print(result)
 ## Storage subscription
 
 ```python
-from substrateinterface import SubstrateInterface
+from aiosubstrate import SubstrateInterface
 
 substrate = SubstrateInterface(
     url="ws://127.0.0.1:9944"
@@ -310,7 +310,7 @@ print(result)
 ## Subscribe to multiple storage keys 
 
 ```python
-from substrateinterface import SubstrateInterface
+from aiosubstrate import SubstrateInterface
 
 
 async def subscription_handler(storage_key, updated_obj, update_nr, subscription_id):

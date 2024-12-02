@@ -2,18 +2,18 @@
 
 This extension enables utilisation of [Giant Squid indexes](https://docs.subsquid.io/giant-squid-api/statuses/) provided by [Subsquid](https://subsquid.io)
 
-Maintained by [Polkascan Foundation](https://github.com/polkascan/py-substrate-interface-extension-subsquid).
+Maintained by [Polkascan Foundation](https://github.com/dipdup-io/aiosubstrate-extension-subsquid).
 
 ## Installation
 ```bash
-pip install substrate-interface-subsquid
+pip install aiosubstrate-subsquid
 ```
 
 ## Initialization
 
 ```python
-from substrateinterface import SubstrateInterface
-from substrateinterface_subsquid.extensions import SubsquidExtension
+from aiosubstrate import SubstrateInterface
+from aiosubstrate_subsquid.extensions import SubsquidExtension
 
 substrate = SubstrateInterface(url="wss://rpc.polkadot.io")
 

@@ -1,1 +1,1 @@
-::: substrateinterface.keypair
+::: aiosubstrate.keypair

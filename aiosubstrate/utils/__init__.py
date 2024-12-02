@@ -41,4 +41,4 @@ def wrap_import() -> Generator[None, None, None]:
     try:
         yield
     except ModuleNotFoundError as e:
-        raise ModuleNotFoundError(e.args[0] + ". Install the package with 'full' extra, e.g. `pip install substrate-interface-async[full]`") from e
+        raise ModuleNotFoundError(e.args[0] + ". Install the package with 'full' extra, e.g. `pip install aiosubstrate[full]`") from e

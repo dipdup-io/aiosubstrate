@@ -18,9 +18,9 @@ from datetime import datetime, timezone
 
 import unittest
 
-from substrateinterface import SubstrateInterface
-from substrateinterface.exceptions import ExtensionCallNotFound
-from substrateinterface.extensions import SubstrateNodeExtension
+from aiosubstrate import SubstrateInterface
+from aiosubstrate.exceptions import ExtensionCallNotFound
+from aiosubstrate.extensions import SubstrateNodeExtension
 from test import settings
 
 

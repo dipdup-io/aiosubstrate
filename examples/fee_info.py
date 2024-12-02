@@ -15,7 +15,7 @@
 # limitations under the License.
 
 import asyncio
-from substrateinterface import SubstrateInterface, Keypair
+from aiosubstrate import SubstrateInterface, Keypair
 
 
 # import logging

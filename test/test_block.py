@@ -21,7 +21,7 @@ from test import settings
 
 from scalecodec.exceptions import RemainingScaleBytesNotEmptyException  # type: ignore[import-untyped]
 
-from substrateinterface import SubstrateInterface
+from aiosubstrate import SubstrateInterface
 
 from test.fixtures import metadata_node_template_hex
 

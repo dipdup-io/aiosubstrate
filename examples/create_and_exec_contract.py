@@ -17,8 +17,8 @@
 import asyncio
 import os
 
-from substrateinterface.contracts import ContractCode, ContractInstance
-from substrateinterface import SubstrateInterface, Keypair
+from aiosubstrate.contracts import ContractCode, ContractInstance
+from aiosubstrate import SubstrateInterface, Keypair
 
 # Enable for debugging purposes
 import logging

@@ -16,8 +16,8 @@
 
 import unittest
 
-from substrateinterface import SubstrateInterface
-from substrateinterface.exceptions import StorageFunctionNotFound
+from aiosubstrate import SubstrateInterface
+from aiosubstrate.exceptions import StorageFunctionNotFound
 from test import settings
 
 

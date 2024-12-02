@@ -76,4 +76,4 @@ else:
     print(f'Error message: {contract_receipt.error_message}')
 ```
 
-See complete [code example](https://github.com/polkascan/py-substrate-interface/blob/master/examples/create_and_exec_contract.py) for more details
+See complete [code example](https://github.com/dipdup-io/aiosubstrate/blob/master/examples/create_and_exec_contract.py) for more details

@@ -16,7 +16,7 @@
 import binascii
 from typing import Any, Optional
 
-from substrateinterface.exceptions import StorageFunctionNotFound
+from aiosubstrate.exceptions import StorageFunctionNotFound
 
 from scalecodec import ScaleBytes, GenericMetadataVersioned, ss58_decode  # type: ignore[import-untyped]
 from scalecodec.base import ScaleDecoder, RuntimeConfigurationObject, ScaleType  # type: ignore[import-untyped]

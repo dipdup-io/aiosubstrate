@@ -18,12 +18,12 @@ About [installation, initialization](getting-started/installation/) and useful b
 Overview of available [extensions](/extensions/); adding or improving existing functionality.
 
 ## Metadata docs
-[Documentation of Substrate metadata](https://polkascan.github.io/py-substrate-metadata-docs/) for well known runtimes and how to use it with py-substrate-interface.
+[Documentation of Substrate metadata](https://polkascan.github.io/py-substrate-metadata-docs/) for well known runtimes and how to use it with aiosubstrate.
 
 ## Contact and Support 
 
-For questions, please see the [Substrate StackExchange](https://substrate.stackexchange.com/questions/tagged/python), [Github Discussions](https://github.com/polkascan/py-substrate-interface/discussions) or 
+For questions, please see the [Substrate StackExchange](https://substrate.stackexchange.com/questions/tagged/python), [Github Discussions](https://github.com/dipdup-io/aiosubstrate/discussions) or 
 reach out to us on our [matrix](http://matrix.org) chat group: [Polkascan Technical](https://matrix.to/#/#polkascan:matrix.org).
 
 ## License
-[https://github.com/polkascan/py-substrate-interface/blob/master/LICENSE](https://github.com/polkascan/py-substrate-interface/blob/master/LICENSE)
+[https://github.com/dipdup-io/aiosubstrate/blob/master/LICENSE](https://github.com/dipdup-io/aiosubstrate/blob/master/LICENSE)

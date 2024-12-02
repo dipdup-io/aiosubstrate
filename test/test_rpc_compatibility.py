@@ -20,7 +20,7 @@ from unittest.mock import AsyncMock
 from scalecodec.type_registry import load_type_registry_file  # type: ignore[import-untyped]
 
 
-from substrateinterface import SubstrateInterface
+from aiosubstrate import SubstrateInterface
 
 from scalecodec.base import ScaleBytes  # type: ignore[import-untyped]
 from scalecodec.types import Vec, GenericAddress  # type: ignore[import-untyped]

@@ -5,7 +5,7 @@ from typing import Union
 
 import orjson
 
-from substrateinterface.utils import wrap_import
+from aiosubstrate.utils import wrap_import
 
 NONCE_LENGTH = 24
 SCRYPT_LENGTH = 32 + (3 * 4)

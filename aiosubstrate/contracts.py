@@ -22,11 +22,11 @@ import orjson
 
 from .utils import version_tuple
 
-from substrateinterface.exceptions import ExtrinsicFailedException, DeployContractFailedException, \
+from aiosubstrate.exceptions import ExtrinsicFailedException, DeployContractFailedException, \
     ContractReadFailedException, ContractMetadataParseException, StorageFunctionNotFound
 from scalecodec.base import ScaleBytes, ScaleType  # type: ignore[import-untyped]
 from scalecodec.types import GenericContractExecResult  # type: ignore[import-untyped]
-from substrateinterface.base import SubstrateInterface, Keypair, ExtrinsicReceipt
+from aiosubstrate.base import SubstrateInterface, Keypair, ExtrinsicReceipt
 
 __all__ = ['ContractExecutionReceipt', 'ContractMetadata', 'ContractCode', 'ContractInstance', 'ContractEvent']
 
@@ -214,7 +214,7 @@ class ContractMetadata:
 
         raise ValueError(f'Constructor "{name}" not found')
 
-    def get_type_string_for_metadata_type(self, type_id: int) -> str:
+    def get_type_string_for_metadata_type(self, type_id: int) -> str:  # type: ignore[return]
         """
         Adds a type included in the metadata (represented by an index in the type list) to the type registry and
         produces a type string that can be used in the scope of the `RuntimeConfigurationObject`.
@@ -228,7 +228,7 @@ class ContractMetadata:
         str
         """
         # assert self.metadata_version
-        if self.metadata_version >= 1:
+        if self.metadata_version >= 1:  # type: ignore[operator]
 
             if type_id > len(self.metadata_dict['types']):
                 raise ValueError(f'type_id {type_id} not found in metadata')
@@ -300,7 +300,7 @@ class ContractMetadata:
                     else:
                         enum_value = 'Null'
 
-                    type_definition['type_mapping'].append(
+                    type_definition['type_mapping'].append(  # type: ignore[attr-defined]
                         [variant['name'], enum_value]
                     )
 
@@ -321,7 +321,7 @@ class ContractMetadata:
                 }
 
                 for field in arg_type['def']['composite']['fields']:
-                    type_definition['type_mapping'].append(
+                    type_definition['type_mapping'].append(  # type: ignore[attr-defined]
                         [field['name'], self.get_type_string_for_metadata_type(field['type'])]
                     )
 
@@ -691,7 +691,7 @@ class ContractCode:
             if not self.wasm_bytes:
                 raise ValueError("No WASM bytes to upload")
 
-            call = await self.substrate.compose_call(
+            call = await self.substrate.compose_call(  # type: ignore[union-attr]
                 call_module='Contracts',
                 call_function='instantiate_with_code',
                 call_params={
@@ -706,7 +706,7 @@ class ContractCode:
         else:
             assert self.code_hash
 
-            call = await self.substrate.compose_call(
+            call = await self.substrate.compose_call(  # type: ignore[union-attr]
                 call_module='Contracts',
                 call_function='instantiate',
                 call_params={
@@ -719,16 +719,16 @@ class ContractCode:
                 }
             )
 
-        extrinsic = await self.substrate.create_signed_extrinsic(call=call, keypair=keypair)
+        extrinsic = await self.substrate.create_signed_extrinsic(call=call, keypair=keypair)  # type: ignore[union-attr]
 
-        result = await self.substrate.submit_extrinsic(extrinsic, wait_for_inclusion=True)
+        result = await self.substrate.submit_extrinsic(extrinsic, wait_for_inclusion=True)  # type: ignore[union-attr]
 
         if not result.is_success:
             raise ExtrinsicFailedException(result.error_message)
 
         for event in await result.triggered_events():
 
-            if self.substrate.implements_scaleinfo():
+            if self.substrate.implements_scaleinfo():  # type: ignore[union-attr]
 
                 if event.value['event']['event_id'] == 'Instantiated':
                     return ContractInstance(

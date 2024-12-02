@@ -19,7 +19,7 @@ import unittest
 from scalecodec.base import ScaleBytes, RuntimeConfigurationObject  # type: ignore[import-untyped]
 from scalecodec.type_registry import load_type_registry_file, load_type_registry_preset  # type: ignore[import-untyped]
 
-from substrateinterface import SubstrateInterface, Keypair, KeypairType
+from aiosubstrate import SubstrateInterface, Keypair, KeypairType
 from test import settings
 
 
