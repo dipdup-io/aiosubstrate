@@ -17,7 +17,7 @@
 import unittest
 
 from aiosubstrate import SubstrateInterface
-from test import settings
+from tests import settings
 
 
 class SubscriptionsTestCase(unittest.IsolatedAsyncioTestCase):

@@ -19,7 +19,7 @@ import unittest
 from scalecodec import ScaleBytes  # type: ignore[import-untyped]
 from scalecodec.exceptions import RemainingScaleBytesNotEmptyException  # type: ignore[import-untyped]
 from aiosubstrate import SubstrateInterface
-from test import settings
+from tests import settings
 
 
 class TestInit(unittest.IsolatedAsyncioTestCase):

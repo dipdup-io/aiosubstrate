@@ -18,7 +18,7 @@ import unittest
 
 from aiosubstrate import SubstrateInterface
 from aiosubstrate.exceptions import StorageFunctionNotFound
-from test import settings
+from tests import settings
 
 
 class QueryTestCase(unittest.IsolatedAsyncioTestCase):
