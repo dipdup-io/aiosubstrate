@@ -1,11 +1,10 @@
 .PHONY: $(MAKECMDGOALS)
 MAKEFLAGS += --no-print-directory
 ##
-##  🚧 DipDup developer tools
+##  🚧 aiosubstrate developer tools
 ##
 PACKAGE=aiosubstrate
-TAG=latest
-SOURCE=aiosubstrate test examples
+SOURCE=src tests examples
 
 
 help:           ## Show this help (default)
@@ -16,7 +15,7 @@ help:           ## Show this help (default)
 ##
 
 install:        ## Install dependencies
-	uv sync --extra full
+	uv sync --extra full --frozen
 
 update:         ## Update dependencies
 	uv lock
@@ -28,19 +27,16 @@ update:         ## Update dependencies
 all:            ## Run an entire CI pipeline
 	make format lint test
 
-format:         ## Format with all tools
-	make black
+format:         ## Format with ruff
+	ruff format
 
 lint:           ## Lint with all tools
 	make ruff mypy
 
 test:           ## Run tests
-	COVERAGE_CORE=sysmon pytest test
+	COVERAGE_CORE=sysmon pytest tests
 
 ##
-
-black:          ## Format with black
-	black ${SOURCE}
 
 ruff:           ## Lint with ruff
 	ruff check --fix --unsafe-fixes ${SOURCE}
