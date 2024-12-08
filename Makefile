@@ -15,7 +15,7 @@ help:           ## Show this help (default)
 ##
 
 install:        ## Install dependencies
-	uv sync --extra full --frozen
+	uv sync --all-extras --all-groups --frozen
 
 update:         ## Update dependencies
 	uv lock

@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog], and this project adheres to [Semantic Versioning].
 
-## [0.1.0] -  2024-12-02
+## [0.1.0] - 2024-12-08
 
 Initial release; forked from `py-substrate-interface`.
 
