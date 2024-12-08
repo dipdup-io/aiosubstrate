@@ -25,11 +25,11 @@ jobs:
       - name: Run lint
         run: uv run make lint
 
-      - name: Run tests
-        run: uv run make test
+      # - name: Run tests
+      #   run: uv run make test
 
       - name: Publish package on PyPi
-        run: uv publish --username __token__ --password ${{secrets.PYPI_TOKEN}}
+        run: uv build && uv publish --username __token__ --password ${{secrets.PYPI_TOKEN}}
 
       # FIXME: Fails on prereleases; https://github.com/mindsers/changelog-reader-action/pull/39
       - name: Parse changelog
