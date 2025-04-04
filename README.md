@@ -1,9 +1,9 @@
 # Python Substrate Interface
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/polkascan/py-substrate-interface/unittests.yml?branch=master)](https://github.com/polkascan/py-substrate-interface/actions?query=workflow%3A%22Run+unit+tests%22)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/polkascan/py-substrate-interface/unittests.yml?branch=master)](https://github.com/JAMdotTech/py-polkadot-sdk/actions?query=workflow%3A%22Run+unit+tests%22)
 [![Latest Version](https://img.shields.io/pypi/v/substrate-interface.svg)](https://pypi.org/project/substrate-interface/)
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/substrate-interface.svg)](https://pypi.org/project/substrate-interface/)
-[![License](https://img.shields.io/pypi/l/substrate-interface.svg)](https://github.com/polkascan/py-substrate-interface/blob/master/LICENSE)
+[![License](https://img.shields.io/pypi/l/substrate-interface.svg)](https://github.com/JAMdotTech/py-polkadot-sdk/blob/master/LICENSE)
 
 
 ## Description
@@ -13,8 +13,8 @@ the Substrate runtime.
 
 ## Documentation
 
-* [Library documentation](https://polkascan.github.io/py-substrate-interface/)
-* [Metadata documentation for Polkadot and Kusama ecosystem runtimes](https://polkascan.github.io/py-substrate-metadata-docs/)
+* [Library documentation](https://jamdottech.github.io/py-polkadot-sdk/)
+* [Metadata documentation for Polkadot and Kusama ecosystem runtimes](https://jamdottech.github.io/py-polkadot-metadata-docs/)
 
 ## Installation
 ```bash
@@ -60,8 +60,7 @@ print(f"Extrinsic '{receipt.extrinsic_hash}' sent and included in block '{receip
 
 ## Contact and Support 
 
-For questions, please see the [Substrate StackExchange](https://substrate.stackexchange.com/questions/tagged/python), [Github Discussions](https://github.com/polkascan/py-substrate-interface/discussions) or 
-reach out to us on our [matrix](http://matrix.org) chat group: [Polkascan Technical](https://matrix.to/#/#polkascan:matrix.org).
+For questions, please see the [Substrate StackExchange](https://substrate.stackexchange.com/questions/tagged/python) or [Github Discussions](https://github.com/JAMdotTech/py-polkadot-sdk/discussions).
 
 ## License
-https://github.com/polkascan/py-substrate-interface/blob/master/LICENSE
+https://github.com/JAMdotTech/py-polkadot-sdk/blob/master/LICENSE
