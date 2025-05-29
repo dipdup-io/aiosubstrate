@@ -11,11 +11,11 @@
 [![GitHub issues](https://img.shields.io/github/issues/dipdup-io/aiosubstrate?color=2c2c2c)](https://github.com/dipdup-io/aiosubstrate/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/dipdup-io/aiosubstrate?color=2c2c2c)](https://github.com/dipdup-io/aiosubstrate/pulls)
 
-> ⚠️ This project is not related to the PolkaScan team! Please, do not send them aiosubstrate bug reports!
+> ⚠️ This project is not related to the PolkaScan or JAMdotTech teams! Please, do not send them aiosubstrate bug reports!
 
 > ⚠️ This project is currently in the beta stage. Use with caution.
 
-A library for interacting with Substrate node, an unofficial fork of [py-substrate-interface](https://github.com/polkascan/py-substrate-interface) with primary goal to achieve compatibility with Python asyncio.
+A library for interacting with Substrate node, an unofficial fork of [py-polkadot-sdk](https://github.com/JAMdotTech/py-polkadot-sdk/) (previously known [py-substrate-interface](https://github.com/polkascan/py-substrate-interface)) as with primary goal to achieve compatibility with Python asyncio.
 
 ## Description
 
@@ -23,10 +23,8 @@ This library specializes in interfacing with a [Substrate](https://substrate.io/
 
 ## Documentation
 
-TBD.
-
-- [Upstream library documentation](https://polkascan.github.io/py-substrate-interface/)
-- [Upstream metadata documentation for Polkadot and Kusama ecosystem runtimes](https://polkascan.github.io/py-substrate-metadata-docs/)
+* Upstream: [Library documentation](https://jamdottech.github.io/py-polkadot-sdk/)
+* Upstream: [Metadata documentation for Polkadot and Kusama ecosystem runtimes](https://jamdottech.github.io/py-polkadot-metadata-docs/)
 
 ## Installation
 
@@ -76,9 +74,9 @@ print(f"Extrinsic '{receipt.extrinsic_hash}' sent and included in block '{receip
 
 ## Contact and Support
 
-> ⚠️ This project is not related to the PolkaScan team! Please, do not send them aiosubstrate bug reports!
+> ⚠️ This project is not related to the PolkaScan or JAMdotTech teams! Please, do not send them aiosubstrate bug reports!
 
-For questions, please see the [Substrate StackExchange](https://substrate.stackexchange.com/questions/tagged/python), [upstream GitHub Discussions](https://github.com/polkascan/py-substrate-interface/discussions).
+For questions, please see the [Substrate StackExchange](https://substrate.stackexchange.com/questions/tagged/python) or [Github Discussions](https://github.com/JAMdotTech/py-polkadot-sdk/discussions).
 
 ## License
 
